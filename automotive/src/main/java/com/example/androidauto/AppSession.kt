@@ -7,7 +7,7 @@ import androidx.car.app.Session
 class AppSession : Session() {
 
     override fun onCreateScreen(intent: Intent): Screen {
-        return HelloWorldScreen(carContext)
+        return HelloWorldScreen(carContext, this)
     }
 
 }
